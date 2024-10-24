@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Django",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/manage.py",
+        "args": [
+          "runserver",
+          "9000"  // Optional, prevents multithreading to simplify debugging
+        ],
+        "django": true,
+        "justMyCode": true,   // Optional, change to false if you want to debug into Django libraries
+        "env": {
+          "DJANGO_DEBUG": "true"
+        },
+        "envFile": "${workspaceFolder}/.env",  // Optional, if you use a .env file for environment variables
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+  
